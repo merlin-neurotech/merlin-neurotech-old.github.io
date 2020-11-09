@@ -1,9 +1,41 @@
 section.team-members {
+
   .team-member {
-    text-align: center;
+    
+    text-align:center;
     img {
       width: 200px;
       margin-bottom: 16px;
+      transition: all 0.18s ease;
     }
+  }
+
+  .team-member:hover{}
+}
+
+.horizontal-line{
+  min-width:100%;
+  background:black;
+  height:1px;
+  margin-bottom: 3rem;
+  display:none;
+}
+
+.team-heading-container{
+  width:100%;
+  display:none;
+  justify-content:center;
+  margin-bottom:50px;
+}
+
+section.group-photo {
+
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  img{
+    width:86.8%;
   }
 }

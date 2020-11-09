@@ -4,145 +4,100 @@ import SubHeader from '../components/SubHeader';
 import Footer from '../components/Footer';
 import fullteam from '../assets/headshots/team.jpg';
 import lukas from '../assets/headshots/lukas.jpg';
-import julia from '../assets/headshots/julia.jpg';
-import abby from '../assets/headshots/abby.jpg';
-import shawn from '../assets/headshots/shawn.jpg';
-import sam from '../assets/headshots/sam.jpg';
+import parsa from '../assets/headshots/parsa.jpg';
 import cam from '../assets/headshots/cam.jpg';
-import mike from '../assets/headshots/mike.jpg';
-import mo from '../assets/headshots/mo.jpg';
-import theo from '../assets/headshots/theo.jpg';
 import awni from '../assets/headshots/awni.jpg';
-import josh from '../assets/headshots/josh.jpg';
-import derek from '../assets/headshots/derek.jpg';
 import nate from '../assets/headshots/nate.jpg';
-import umer from '../assets/headshots/umer.jpg';
-
+import varnikaa from '../assets/headshots/varnikaa.jpg';
 
 
 function Team() {
-    return (
-        <div>
-            <Header title="Our Team"/>
-            <section className="team-members">
-              <div className="container">
-                <div className="row">
-                  <div className="col-sm-4">
-                    <div className="team-member">
-                      <img src={abby} className="img-fluid" />
-                      <h3>Abigail Holland</h3>
-                      <p>President</p>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="team-member">
-                      <img src={julia} className="img-fluid" />
-                      <h3>Julia Maine</h3>
-                      <p>Director of Operations</p>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="team-member">
-                      <img src={lukas} className="img-fluid" />
-                      <h3>Lukas Bauer</h3>
-                      <p>Director of Education</p>
-                    </div>
-                  </div>
-                </div>
+  return (
+    <div>
+      <Header title="Our Team" description="Get to know our 2020-2021 season team!" />
+
+      <section className="team-members">
+        <div className="container">
+          <div className="team-heading-container"><h2>Admistrative</h2></div>
+          <div className="horizontal-line"></div>
+
+          <div className="row align-items-center">
+            <div className="col-sm-4">
+              <div className="team-member">
+                <a href="https://www.linkedin.com/in/lukas-bauer-j/" target="_blnank">
+                  <img src={lukas} className="img-fluid" />
+                </a>
+                <h3>Lukas Bauer</h3>
+                <p>Captain</p>
               </div>
-            </section>
-            <section className="team-members">
-              <div className="container">
-                <div className="row">
-                  <div className="col-sm-4">
-                    <div className="team-member">
-                      <img src={shawn} className="img-fluid" />
-                      <h3>Shawn Carere</h3>
-                      <p>Backend Development Director</p>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="team-member">
-                      <img src={sam} className="img-fluid" />
-                      <h3>Sam White</h3>
-                      <p>Backend Development Director</p>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="team-member">
-                      <img src={cam} className="img-fluid" />
-                      <h3>Cam McKay</h3>
-                      <p>Backend Development Lead</p>
-                    </div>
-                  </div>
-                </div>
+            </div>
+
+            <div className="col-sm-4">
+              <div className="team-member">
+                <a href="https://www.linkedin.com/in/cameron-mackay-/" target="_blnank">
+                  <img src={cam} className="img-fluid" />
+                </a>
+                <h3>Cam McKay</h3>
+                <p>Backend Lead</p>
               </div>
-            </section>
-            <section className="group-photo">
-              <div className="container">
-                <div className="row">
-                  <div className="col-sm-12">
-                    <img src={fullteam} className="img-fluid" />
-                  </div>
-                </div>
+            </div>
+
+            <div className="col-sm-4">
+              <div className="team-member">
+                <a href="https://www.linkedin.com/in/awni-altabaa/" target="_blank">
+                  <img src={awni} className="img-fluid" />
+                </a>
+                <h3>Awni Altabaa</h3>
+                <p>Data Science</p>
               </div>
-            </section>
-            <section className="team-members">
-              <div className="container">
-                <div className="row">
-                  <div className="col-sm-4">
-                    <div className="team-member">
-                      <img src={mike} className="img-fluid" />
-                      <h3>Mike Kurdyla</h3>
-                      <p>Backend Developer</p>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="team-member">
-                      <img src={theo} className="img-fluid" />
-                      <h3>Theo Raptis </h3>
-                      <p>Backend Developer</p>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="team-member">
-                      <img src={josh} className="img-fluid" />
-                      <h3>Josh Kanattu</h3>
-                      <p>Backend Developer</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section className="team-members">
-              <div className="container">
-                <div className="row">
-                  <div className="col-sm-4">
-                    <div className="team-member">
-                      <img src={nate} className="img-fluid" />
-                      <h3>Nate Nethercott</h3>
-                      <p>Artificial Intelligence Developer</p>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="team-member">
-                      <img src={awni} className="img-fluid" />
-                      <h3>Awni Altabaa</h3>
-                      <p>Artificial Intelligence Developer</p>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="team-member">
-                      <img src={derek} className="img-fluid" />
-                      <h3>Derek Zhang </h3>
-                      <p>Backend Developer</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <Footer />
+            </div>
+
           </div>
-    )
+        </div>
+      </section>
+
+      <section className="team-members">
+        <div className="container">
+          <div className="team-heading-container"><h2>Backend</h2></div>
+          <div className="horizontal-line"></div>
+          <div className="row align-items-center">
+
+            <div className="col-sm-4">
+              <div className="team-member">
+                <a href="https://www.linkedin.com/in/varnikaagupta/" target="_blank"><img src={varnikaa} className="img-fluid" /></a>
+                <h3>Varnikaa Gupta</h3>
+                <p>Operations</p>
+              </div>
+            </div>
+
+            <div className="col-sm-4">
+              <div className="team-member">
+                <a href="https://www.linkedin.com/in/nate-nethercott-99b546176/" target="_blank"><img src={nate} className="img-fluid" /></a>
+                <h3>Nate Nethercott</h3>
+                <p>Data Science</p>
+              </div>
+            </div>
+
+            <div className="col-sm-4">
+              <div className="team-member">
+                <a href="https://ca.linkedin.com/in/parsa-abdi/" target="_blank"><img src={parsa} className="img-fluid" /></a>
+                <h3>Parsa Abdi</h3>
+                <p>Marketing</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section className="group-photo">
+        <div className="container">
+          <img src={fullteam} className="img-fluid" />
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  )
 }
 export default Team;

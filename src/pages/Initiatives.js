@@ -9,204 +9,153 @@ import F2 from '../assets/f2.png';
 import Stock1 from '../assets/stock1.jpg';
 import yannick from '../assets/yannick.jpg';
 import booth2 from '../assets/booth2.jpg';
+import neurol from '../assets/neurol.png';
 import hack from '../assets/hackprinceton.jpeg';
-
+import Education from '../assets/education.png';
+import Projects from '../assets/projects.png';
+import Group from '../assets/group.svg';
+import Paper from '../assets/paper.svg';
+import Stock2 from '../assets/stock2.jpg';
 
 function Initiatives() {
-    return (
-        <div>
-            <Header title="Our Current Initiatives" alternateLink={true} />
-            <section className="features">
-              <div className="container">
-                <div className="row">
-                  <div className="col-sm-12 my-auto text-center">
-                    <h2> Offered Course</h2>
-                    <p>This past term we ran an educational program developed originally by 
-                      University of Toronto's NeurotechX student club and updated internally 
-                      to teach the basics of neurotechnology. The conducted course included
-                      a weekly tutorial session of in-person workshops. 
-                      This course was presented over the course of a term to interested 
-                      students. This course will become a regular part of Merlin Neurotech's 
-                      contribution to Queen's life to continue teaching more 
-                      students about neurotechnology and to ensure organizational longevity.
-                      
+  return (
+    <div>
+      <Header title="Our Initiatives" alternateLink={true}
+        description="A student team looking to integrate emerging neurotechnology developments in practical BCI (brain-computer interface) applications." />
+      <section className="features">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12 my-auto text-center">
+              <h2> Current Focuses</h2>
+              <p>
+                As an emerging student team dedicated to the design and implementation of neurotechnology, our current efforts are focused towards creating reliable and resuable code to facilitate
+                BCI creation, and using this framework, to create interesting BCI projects.  Our goal is to make projects which transcend their immediate novelty towards having important social impacts
+                and which promote the theme of accessibility in design.
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="row">
+                <div className="col-sm-6">
+                  <div className="feature-container">
+                    <img className="feature-icon" src={F1} />
+                    <h3>Infastructure</h3>
+                    <p>Software repositories are being created as a foundation for
+                    future BCI development.  These repositories address
+                    data handling, feature engineering, classification, and general time-series utility.
+                            </p>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="feature-container">
+                    <img className="feature-icon" src={F2} />
+                    <h3>Projects</h3>
+                    <p>
+                      Our last project, "Alpha-light", used a simple alpha-wave trigger to control the operation
+                      of a Philips Hue light.  This year we plan on tackling more technically demanding applications.
                     </p>
                   </div>
                 </div>
-                <div className="row">
-                  <div className="col-lg-6 my-auto text-center">
-                    <img className="section-img" src={edu} />
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="row">
-                      <div className="col-sm-6">
-                        <div className="feature-container">
-                          <img className="feature-icon" src={F1} />
-                            <h3>Graduates</h3>
-                            <p>The graduates joined the Merlin project development team to 
-                              help with the NeurotechX project submission. 
-                            </p>
-                          </div>
-                        </div>
-                        <div className="col-sm-6">
-                          <div className="feature-container">
-                            <img className="feature-icon" src={F2} />
-                            <h3>Future Courses</h3>
-                            <p>
-                            After the success of this first year this course will continue 
-                            to run for the first term of every year.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              </div>
+            </div>
+            <div className="col-lg-6 my-auto text-center">
+              <img className="section-img" src={edu} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="features off-white">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12 my-auto text-center">
+              <h2>Research-Driven Design</h2>
+              <p>
+                In the field of neurotechnology, it is essential to be familiar with current developments and historically significant results.
+                Proper understanding of neurological phenomena is also an essential competence.  As a primer for this season, team members are
+                expected to develop sufficient understandings of these concepts through self-motivated research.
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-6 my-auto text-center">
+              <img className="section-img" src={Stock2} />
+            </div>
+            <div className="col-lg-6">
+              <div className="row">
+                <div className="col-sm-6">
+                  <div className="feature-container">
+                    <img className="feature-icon" src={Education} />
+                    <h3>Consulting</h3>
+                    <p>For the 2020-2021 season, we've reached out to the Department of Biomedical and Molecular Sciences at
+                    Queen's University for advice and counselling on the BCI development process.
+                              </p>
                   </div>
                 </div>
-              </section>
-              <section className="features off-white">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-12 my-auto text-center">
-                    <h2>Educational workshops</h2>
-                      <p>In addition to running the introduction course this year, Merlin
-                        representatives also presented at multiple conferences and 
-                        other Queen's events. Our past workshops have included coding tutorials, 
-                        walkthroughs of our developed packages and overviews of potential 
-                        applications of neuroscience. We have also hosted professionals 
-                        from InterAxon and Queen's Center for Neuroscience who 
-                        graciously gave presentations on Biological Signal Processing and 
-                        Neuroscience. </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-6">
-                      <div className="row">
-                        <div className="col-sm-6">
-                          <div className="feature-container">
-                            <img className="feature-icon" src={F1} />
-                              <h3>Coding Introduction</h3>
-                              <p> Brain implants to directly link human minds to
-                              computers. These are devices that allow people to control
-                              software and devices using only their brain activity in real-time.</p>
-                            </div>
-                          </div>
-                          <div className="col-sm-6">
-                            <div className="feature-container">
-                              <img className="feature-icon" src={F2} />
-                              <h3>BCI Introduction</h3>
-                              <p>An overview of neurotechnology for student populations to give them insight and intuition
-                                on neuroscience software development and how the field may develop. </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-6 my-auto text-center">
-                        <img className="section-img" src={edu} />
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section className="features">
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-lg-6 my-auto text-center">
-                        <img className="section-img" src={booth2} />
-                      </div>
-                      <div className="col-lg-6 my-auto text-center">
-                        <h2>Demonstration Booth</h2>
-                        <p>The main way that Merlin interacts with the Queen's and 
-                          greater Kingston communities is through demonstration booths.
-                          Merlin runs approximately 15 booths a year at club openhouse events,
-                          conferences, and hackathons. Additionally Merlin operates spontaneous
-                          demonstration booths on campus to recruit new members during hiring and
-                          to celebrate completed projects.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section className="features off-white">
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-lg-6 my-auto text-center">
-                            <h2>Conference Attendances</h2>
-                            <p>Merlin has made it a priority to enable members of the 
-                              group to attend relevant conferences by subsidizing their
-                              travel, accomodations, and developing relationships with
-                              the conferences to get decreased ticket costs. We have had 
-                              members attend the Neurogeneration conference at Queen's 
-                              and the Expo Entrepreneur in Montreal. </p>
-                      </div>
-                      <div className="col-lg-6 my-auto text-center">
-                        <img className="section-img" src={yannick} />
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section className="features">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-sm-12 my-auto text-center">
-                      <h2>HackaThon Attendances</h2>
-                      <p>Merlin has made it a priority to enable members of the 
-                        group to attend HackaThons to encourage team bonding, to 
-                        help the members develop their software development skills, 
-                        and to help Merlin members produce interesting projects.
-                        Merlin has encourage students by subsidizing their
-                        travel and accomodations. This past year we sent two groups of 
-                        students to HackaThons.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-6 my-auto text-center">
-                      <img className="section-img" src={hack} />
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="row">
-                        <div className="col-sm-6">
-                          <div className="feature-container">
-                            <img className="feature-icon" src={F1} />
-                              <h3>PrincetonHacks</h3>
-                              <p>The PrincetonHacks team this year developed a 
-                                Flutter App which stored and verified an electronic
-                                identification for an electronic wallet. 
+                <div className="col-sm-6">
+                  <div className="feature-container">
+                    <img className="feature-icon" src={Projects} />
+                    <h3>Literature</h3>
+                    <p>A primary focus for the 2020-2021 season is to replicate results presented in famous neurotech papers.
+                    Particular interest is placed on the study of VEP modulations.
                               </p>
-                            </div>
-                          </div>
-                          <div className="col-sm-6">
-                            <div className="feature-container">
-                              <img className="feature-icon" src={F2} />
-                              <h3>BrickHacks</h3>
-                              <p>The BrickHacks team sent to Rochester Institute of 
-                                Technology this year won the Constellation Branding Award. 
-                                The developed project was an environmental rewards program
-                                for Constellation Brand's Corona product.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
-                </section>
-                <section className="upcoming-events">
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-sm-12">
-                        <div className="narrow-text">
-                          <h3>Get involved</h3>
-                          <h2>Upcoming Events</h2>
-                          <p>We offer a series of events throughout the semester which are a great intro to the neurotech space!</p>
-                          <a href="https://www.facebook.com/merlinneurotech/">More details</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <Footer />
-
+                </div>
+              </div>
             </div>
-    )
+          </div>
+        </div>
+      </section>
+
+      <section className="features">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12 my-auto text-center">
+              <h2>Development</h2>
+              <p>
+                <a href="https://pypi.org/project/neurol/" target="_blank">Neurol</a> is a project spear-headed by backend lead
+                Awni Altabaa which addresses device connection, data streaming, ML pipeline creation, and BCI development all in one.
+                Throughout the upcoming season Merlin intends to add robustness and more functionality to this essential package, including
+                more device options and statistical analysis tools.
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="row">
+                <div className="col-sm-6">
+                  <div className="feature-container">
+                    <img className="feature-icon" src={Paper} />
+                    <h3>Documentation</h3>
+                    <p>Neurol documentation will be updated to improve the readability of important
+                    scripts.  More descriptive doc strings will allow for immediate understanding of
+                    a function's operation and merit.
+                            </p>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="feature-container">
+                    <img className="feature-icon" src={F2} />
+                    <h3>Utility</h3>
+                    <p>
+                      Statistical methods for technical analysis will be added to the pre-existing BCI utility
+                      scripts.  Data visualization functions will also be fleshed out.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 my-auto text-center">
+              <img className="section-img" src={neurol} />
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
+
+    </div>
+  )
 }
 export default Initiatives;
+

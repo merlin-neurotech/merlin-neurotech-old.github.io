@@ -21,23 +21,23 @@ function App() {
       <div className="App">
         <Switch>
 
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route exact path="/team">
-              <Team />
-            </Route>
-            <Route exact path="/initiatives">
-              <Initiatives />
-            </Route>
-            <Route exact path="/contact">
-              <Contact />
-            </Route>
-            <Route exact path="/">
-              <Home />
-            </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/team">
+            <Team />
+          </Route>
+          <Route exact path="/initiatives">
+            <Initiatives />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
 
-          </Switch>
+        </Switch>
       </div>
     </Router>
 
