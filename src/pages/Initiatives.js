@@ -40,7 +40,7 @@ function Initiatives() {
                 <div className="col-sm-6">
                   <div className="feature-container">
                     <img className="feature-icon" src={F1} />
-                    <h3>Infastructure</h3>
+                    <h3>Infrastructure</h3>
                     <p>Software repositories are being created as a foundation for
                     future BCI development.  These repositories address
                     data handling, feature engineering, classification, and general time-series utility.
